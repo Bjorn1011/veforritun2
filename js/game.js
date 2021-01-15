@@ -57,4 +57,4 @@ window.addEventListener('resize', () => {
     game.resize();
 });
 
-window.addEventListener('keydown', game.hnadleKeyboardInput);
+// window.addEventListener('keydown', game.hnadleKeyboardInput);
