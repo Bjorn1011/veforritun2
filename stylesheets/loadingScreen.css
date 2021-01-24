@@ -1,5 +1,5 @@
 #loadingscreen {
-    background: rgba(red, green, blue, alpha);
+    background: rgba(100, 100, 100, 0.7);
 }
 
 #loadingmessage {

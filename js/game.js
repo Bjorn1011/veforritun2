@@ -46,6 +46,14 @@ const game = {
 
         gameContainer.style.width = `${width}px`;
     },
+
+    loadLeveldata(level) {
+        game.currentLevel = level;
+        game.currentMap = maps[level.mapName];
+
+        game.currentMapImage = loader.loadImage(`images/maps/${maps[level.mapName].mapImage}`);
+    },
+    
 };   
 
 window.addEventListener('load', () =>{
@@ -57,4 +65,5 @@ window.addEventListener('resize', () => {
     game.resize();
 });
 
+window.addEventListener('keydown', game.handleKeyboardInput);
 // window.addEventListener('keydown', game.hnadleKeyboardInput);

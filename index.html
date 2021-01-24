@@ -7,10 +7,16 @@
 
     <script src="js/common.js"></script>
     <script src="js/game.js"></script>
+    <script src="js/singleplayer.js"></script>
+    <script src="js/levels.js"></script>
 
-    <link rel="stylesheet" href="stylesheets/main.css" type="text/css">
+    <link rel="stylesheet" href="stylesheet/main.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/startscreen.css" type="text/css">
     <link rel="stylesheet" href="stylesheets/loadingScreen.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/missionBriefing.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/gameInterface.css" type="tezt/css">
+
+
 </head>
 <body>
     <div id="wrapper">
@@ -21,8 +27,31 @@
                 <span class="game-option" onclick = "singleplayer.start();">Campaign</span>
                 <span class="game-option" onclick = "multiplayer.start();">multiplayer</span>
             </div>
+
+            <div id="missionbreifingscreen" class="gameplayer">
+                <img src="Images/screens/interface-left.png" class="left-panel" draggable="false">
+                <img src="Images/screens/interface-right-briefing.png" class="right-panel" draggable="false">
+                <input type="button" id="entermission" onclick = "singleplayer.play();">
+                <input type="button" id="exitmission" onclick = "singleplayer.exit();">
+                <div id="missionbriefing"></div>
+            </div>
+
+            <div id="gameInterfacescreen" class="gamelayer">
+                <img src="Images/screens/interface-left.png" class="left-panel"
+                    draggable="false">
+                <img src="images/screens/interface-right-game.png" class="right-panel"
+                    draggable="false">
+                <div id="gamemessages"></div>
+                <div id="callerpicture"></div>
+                <div id="cash"></div>
+                <div id="sidebarbuttons">                    
+                </div>
+                <canvas id="gamebackgroundcanvas"></canvas>
+                <canvas id="gameforegroundcanvas"></canvas>
+                <input type="text" id="chatmessage">
+            </div>
         
-            <div id="loadingscreen" class="gamelayer">
+            <div id="loadingScreen" class="gamelayer">
                 <div id="loadingmessage"></div>
             </div>
         
