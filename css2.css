@@ -1,0 +1,30 @@
+p {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+}
+
+button1 {
+    justify-content: center;
+    align-items: center;
+    color: green;
+    font-size: 50px;
+    border: 3px solid green;
+}
+
+button2 {
+    justify-content: center;
+    align-items: center;
+    color: yellow;
+    font-size: 50px;
+    border: 3px solid yellow;
+}
+
+button3 {
+    justify-content: center;
+    align-items: center;
+    color: red;
+    font-size: 50px;
+    border: 3px solid red;
+}
+
